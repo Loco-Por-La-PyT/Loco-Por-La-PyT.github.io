@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("salud.jpg");
+    margin: 0;
+    padding: 0;
+}
+div img{
+    height: 50px;
+    margin-left: 250px;
+    vertical-align: middle;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+th, td {
+    border: 1px solid #000000;
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+}
+th {
+    padding-left: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+tr{
+    border-bottom: 5px black;
+}
+.datosper{
+    background-color: rgb(194, 233, 239);
+    padding-right: 5px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(57, 57, 151);
+}
+form {
+    margin-top: 20px;
+}
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #30e7f8;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-color:#000000;
+    border-radius: 30px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #297ea3;
+    color: white;
+}
+.radio label{
+    font-weight: normal;
+}
+.checkbox{
+display: flex;
+border-top: none;
+border-bottom: none;
+}
+.checkbox label{
+    font-weight: normal;
+    flex: 200px;
+}
+.checkbox2{
+    display: flex;
+    border-top: none;
+}
+.checkbox2 label{
+    font-weight: normal;
+    flex: 200px;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    border: 02px solid #ffffff;
+    box-sizing: border-box;
+}
+cite{
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
