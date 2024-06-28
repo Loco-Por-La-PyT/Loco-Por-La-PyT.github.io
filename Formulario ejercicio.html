@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loco por la PyT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul class="social-menu">
+            <li class="social-item"><a class="Twitter" href="https://twitter.com"><img src="twitter-logo.png" alt="Twitter"></a></li>
+            <li class="social-item"><a class="Instagram" href="https://www.instagram.com/locoporlapyt/"><img src="instagram-logo.png" alt="Instagram"></a></li>
+            <li class="social-item"><a class="Facebook" href="https://facebook.com"><img src="facebook-logo.png" alt="Facebook"></a></li>
+        </ul>
+        <h1 class="titulo-pagina">Loco por la programación y tecnología</h1>
+    </header>
+    <nav class="menu-horizontal">
+        <ul class="menu">
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="Noticias.html">Noticias</a></li>
+            <li><a href="Proyectos.html">Proyectos</a>
+                <ul>
+                    <li><a href="Formulario ejercicio.html">Ficha Médica</a></li>
+                    <li><a href="#">Próximamente...</a></li>
+                    <li><a href="#">Próximamente...</a></li>
+                </ul>
+            </li>
+            <li><a href="quiensoy.html">¿Quién soy?</a></li>
+        </ul>
+    </nav>
+        <main>
+            <section>
+                <h2>Formulario "Ficha Médica" con HTML y CSS</h2>
+                <p>En esta sección podremos ver codigos de proyectos realizados de mi propia mano de diferentes lenguajes de programación y diferentes secciones de tecnología.</p>
+                <p>
+                    Empezaremos con un pequeño proyecto en donde se nos pide informatizar una ficha médica aplicando un diseño y distribución
+                    de elementos libres de tal manera que en mi caso se viera así:
+                </p>
+                    <div class="Formulario"><img src="Formulario.png"></div>
+                <p>
+                    Podemos observar como hay diferentes elementos que hacen que la ficha médica sea más práctica como elecciones de <b>selección
+                    única</b> en el Grupo Sanguíneo, <b>selección múltiple</b> en problemas de salud o incluso en la formato para la <b>elección de la fecha de realización.</b><br>
+                    Todo esto es gracias al conocimiento que se encuentra detras de la apariencia, podemos ver el código en HTML y la configuración de la apariencia en CSS:<br>
+                    <ul>
+                        <li><a href="HTML ficha médica.txt">Código HTML</a></li>
+                        <li><a href="CSS ficha médica.txt">Código CSS</a></li>
+                    </ul>
+                </p>
+                <p>Vamos a resumir aquellos elementos de interes como son:
+                    <ul>
+
+                        <!--ENTRADA DE ELEMENTOS DE CUADRO DE TEXTO-->
+
+                        <li>
+                            <b>Cuadros de ingresar datos:</b> Observamos que tenemos cuadros en donde ingresamos los datos personales en <u>cadena de texto</u> como "Nombre" y "Apellidos" 
+                            y en <u>caracter númerico</u> como "Edad" para ello haremos uso de un <code>label</code> que suele estar asociado con un <code>input</code>> (u otro elemento de control), esta asociciación
+                            se realiza mediante el atributo <code>for</code> en la etiqueta <code>label</code>, que debe ser del mismo valor que el atributo <code>id</code> en la de <code>input</code>.<br>
+                            <br>
+                            La etiqueta <code>label</code> es un pilar fundamental de cualquier formulario en el desarrollo web. Representa una etiqueta que le proporciona una descripción textual a un control de formulario,
+                            normalmente a través del texto encerrado dentro de la etiqueta.<br>
+                            Lo interesante de esta etiqueta es su capacidad para asociarse a otros elementos, específicamente a <code>input</code>. Lograremos esto utilizando el atributo <code>for</code>, en nuestro caso:<br><br>
+                            <div class="code1"><img src="label input.png"></div>
+                            <p>
+                                Vemos que en <code>input</code> hemos añadido un par más de atributos:
+                                <ul>
+                                    <li>
+                                        <b>type:</b> define qué tipo de entrada de datos se espera (name, number, password...).
+                                    </li>
+                                    <li>
+                                        <b>name:</b> Indica como se llamara el <code>input</code> que definimos.
+                                    </li>
+                                    <li>
+                                        <b>required placeholder:</b> Podemos indicar un mensaje al usuario para darle un a "pista" sobre que debe introducir (placeholder) en el cuadro y que además sea obligatorio / requerido (required)
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+
+                        <!--ENTRADA DE ELEMENTOS DE SELECCION DE CUADRO DESPLEGABLE-->
+
+                        <li>
+                           <b>Elección de datos sobre cuadro desplegable: </b>Esto se puede ver a la hora de seleccionar el sexo en este formulario en donde si accedemos al se desplegara un cuadro con varios opciones que el programador
+                           haya definido para la elección.<br><br>
+                           <div class="cuadroelecc"><img src="sexo.png"></div>
+                           <br>
+                           Para lograr esto, asociaremos <code>input</code> con <code>select</code> de forma que tendremos que crear opciones de elección con <code>option</code> e indicando su valor, en nuestro caso sería:<br><br>
+                           <div class="code2"><img src="code2.png"></div>
+                           <br>
+                           En este caso analizamos las etiquetas <code>option</code>:
+                           <ul>
+                            <li>
+                                <b>value:</b> El contenido de este atributo representara el valor que será enviado al enviar el formulario si una determinada opción está seleccionada. En caso de que no se eliga ninguna se predefinira la opción por defecto indicandolo en su valor.
+                            </li>
+                           </ul>
+                        </li>
+                        <br>
+                        <!--ENTRADA DE ELEMENTOS DE SELECCION UNICA ENTRE OPCIONES-->
+
+                        <li>
+                            <b>Selección única entre opciones: </b>Esto se puede ver a la hora de seleccionar el <i>Grupo Sanguíneo</i> en este formulario en donde vemos que tenemos opciones para elgir, pero por lógica una persona solo puede pertenecer a un <i>Grupo Sanguíneo</i>
+                            de ahí la utilización de selección única, aunque parece complicado haremos uso otra vez de <code>label</code> e <code>input</code><br><br>
+                            <div class="selecunic"><img src="seleccion unica.png"></div>
+                            <br>
+                            Para lograr esto, asociaremos <code>input</code> con <code>label</code> de forma que tendremos que crear opciones de selección única de modo que solo podamos seleccionar una y no más, de esto dependera los atributos y su valor en el interior de las etiquetas, 
+                            en nuestro caso el código sería:<br><br>
+                            <div class="code3"><img src="code3.png"></div>
+                            <br>
+                            En este caso, observamos como <code>input</code> ira por encima de <code>label</code> pero lo que definira que sea una elección sera el atributo <code>type</code> cuyo valor es <code>radio</code> indicando que es una elección y como cada una es requerida debido al atributo
+                            <code>required</code> quiere decir que uno de ellas es requerida todo ello indicando con <code>for</code> a donde dirige la elección escogida.
+                         </li>
+                         <br>
+
+                          <!--ENTRADA DE ELEMENTOS DE SELECCION MULTIPLE ENTRE OPCIONES-->
+
+                        <li>
+                            <b>Selección múltiple entre opciones: </b>Esto se puede ver a la hora de seleccionar los <i>Probelmas de Salud</i> en este formulario en donde vemos que tenemos opciones para elegir, por lógica una persona puede padecer más de un <i>Problema de Salud</i>
+                            de ahí la utilización de selección múltiple, aunque parece complicado haremos uso otra vez de <code>label</code> e <code>input</code> como anteriormente<br><br>
+                            <div class="selecmult"><img src="seleccion multiple.png"></div>
+                            <br>
+                            Para lograr esto, asociaremos <code>input</code> con <code>label</code> de forma que tendremos que crear opciones de selección múltiple de modo que solo podamos seleccionar cero o más, de esto dependera los atributos y su valor en el interior de las etiquetas, 
+                            en nuestro caso el código sería:<br><br>
+                            <div class="code4"><img src="code4.png"></div>
+                            <br>
+                            En este caso por organización las elecciones la hemos organizado en una tabla dos a dos, de manera que se vea como hemos diseñado el formulario, lo que definira que estas opciones sean de selección múltiple sera el valor del atributo <code>type</code> que es 
+                            <code>checkbox</code> y como no esta obligado ni requerido el usuario es capaz de elegir o no las elecciones que él crea convenientes.
+                        </li>
+                        <br>
+                    
+                    <!--ENTRADA DE ELEMENTO FECHA-->
+
+                    <li>
+                        <b>Selección de fecha: </b> Al inicio del formulario se encuentra una opción para indicar la fecha de registro del formulario de modo que el usuario la eliga según el día que lo rellene para darlo de alta, al acceder a él se nos presenta un calendario que según
+                        el órden de los elementos fecha se presentaran de una forma u otra en este caso en orden europeo (día, mes, año) o pudiendo escribir la fecha manualmente en su orden correspondiente.
+                        <div class="fecha"><img src="fecha.png"></div>
+                        <br>
+                        Para lograr esto unicamente haremos uso de <code>input</code> pero todo se definira según el valor de los atributos de modo que el código es el siguiente:<br><br>
+                        <div class="code5"><img src="code5.png"></div>
+                        <br>
+                        En este caso lo que define el formato de la elección de fecha son el atributo <code>type</code> cuyo valor ser el de <code>date</code> y el valor de atributo <code>value</code> cuyo valor sera una sentencia indicando como será el valor de la fecha a elegir 
+                        <code> ?php echo date('Y-m-d'); ?</code> ademas de que para requerirla en el formulario haremmos uso del atributo  <code>required</code>.
+                    </li>
+                    </ul>
+                    En resumen, saber utilizar sobre todo las etiquetas de <code>input</code> y <code>label</code> y sus atributos además de los valores que añadimos a los mismos, para poder generar un formulario interecativo, atractivo y sobre todo elegante y formal.
+                </p>
+            </section>
+        </main>
+    <footer>
+        <p>&copy; 2024 Loco por la PyT</p>
+    </footer>
+</body>
+</html>

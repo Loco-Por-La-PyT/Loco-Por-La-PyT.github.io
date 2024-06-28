@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    background-image:url(background3.jpg);
+    background-size: cover;
+    background-position: 1px 350px;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Añadido para establecer contexto de posición */
+}
+.titulo-pagina{
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 10);
+}
+.titulo-articulo-alicia{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.Alicia1 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.cerebro img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.cerebro i{
+    font-size: 12px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.Facebook img{
+    display: block;
+    width: 25px;  /* Ajusta el tamaño según sea necesario */
+    height: 25px; /* Ajusta el tamaño según sea necesario */
+    border: none;
+}
+.Instagram img{
+    display: block;
+    width: 25px;  /* Ajusta el tamaño según sea necesario */
+    height: 25px; /* Ajusta el tamaño según sea necesario */
+    border: none;
+}
+.Twitter img{
+    display: block;
+    width: 25px;  /* Ajusta el tamaño según sea necesario */
+    height: 25px; /* Ajusta el tamaño según sea necesario */
+    border: none;
+}
+.social-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-item {
+    margin: 0;
+    padding: 0;
+}
+
+.social-item a {
+    display: block;
+    padding: 5px;
+}
+
+h1 {
+    margin-top: 40px; /* Ajustar según sea necesario */
+}
+.menu-horizontal{
+    background-color: #575757;
+}
+nav ul {
+    list-style: none;
+	padding: 0;
+    margin: 0;
+	display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+	color: #fff;
+    transition: all 0.3s ease;
+}
+nav ul li:hover > ul {
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: #575757;
+  }
+nav a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 100%;
+  }
+nav ul ul li {
+    display: block;
+  }
+nav ul ul li a {
+    padding: 10px 20px;
+    color: #fdfdfd;
+  }
+nav ul ul li:hover {
+    background-color: #000000;
+  }
+main {
+    flex: 1;
+    padding: 50px;
+
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#search-form {
+    display: flex;
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#search-input:focus {
+    border-color: #333;
+}
+
+#search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s ease;
+}
+
+#search-form button:hover {
+    background-color: #575757;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

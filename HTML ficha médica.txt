@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css" type="text/css" media="screen">
+
+<title>Ficha Médica</title>
+</head>
+<body>
+
+<div class="container">
+    <img src="logo.jpg" alt="Logo">
+    <h1>Ficha Médica</h1>
+    <p><b>Fecha:</b> <input type="date" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" required></p>
+<form>
+    <table>
+        <tr>
+            <th class="datosper"><label for="nombre" >Nombre</label></th>
+            <th colspan="5"><input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre"></th>
+        </tr>
+        <tr>
+            <th class="datosper"><label for="apellidos">Apellidos</label></th>
+            <th colspan="5"><input type="text" id="apellidos" name="apellidos" required placeholder="Ingrese sus apellidos"></th>
+        </tr>
+        <tr>
+            <th class="datosper"><label for="edad">Edad</label></th>
+            <th colspan="3"><input type="number" id="edad" name="edad" required placeholder="Indique su edad"></th>
+            <th class="datosper"><label for="genero">Sexo</label></th>
+            <th colspan="1">
+                <select id="genero" name="genero" required>
+                    <option value="defecto"></option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th class="datosper"><label for="telefono">Teléfono de contacto</label></th>
+            <th colspan="5"><input type="text" id="telefono" name="telefono" required placeholder="Ingrese su número de télefono"></th>
+        </tr>
+        <tr>
+            <th class="datosper"><label for="localidad" >Localidad</label></th>
+            <th><input type="text" id="localidad" name="localidad" required placeholder="Localidad"></th>
+            <th class="datosper"><label for="provincia" >Provincia</label></th>
+            <th><input type="text" id="provincia" name="provincia" required placeholder="Provincia"></th>
+            <th class="datosper"><label for="CP" >C.P.</label></th>
+            <th><input type="text" id="CP" name="CP" required placeholder="Código Postal"></th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th class="datosper">Grupo Sanguíneo</th>
+        </tr>
+        <tr>
+            <th class="radio">
+                <input type="radio" name="respuesta" value="O-" required>
+                <label for="O-">O-</label>
+
+                <input type="radio" name="respuesta" value="O+" required>
+                <label for="O+">O+</label>
+
+                <input type="radio" name="respuesta" value="A-" required>
+                <label for="A-">A-</label>
+
+                <input type="radio" name="respuesta" value="A+" required>
+                <label for="A+">A+</label>
+
+                <input type="radio" name="respuesta" value="B-" required>
+                <label for="B-">B-</label>
+
+                <input type="radio" name="respuesta" value="B+" required>
+                <label for="B+">B+</label>
+
+                <input type="radio" name="respuesta" value="AB-" required>
+                <label for="AB-">AB-</label>
+
+                <input type="radio" name="respuesta" value="AB+" required>
+                <label for="AB+">AB+</label>
+
+            </th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th class="datosper">Marque aquellos problemas de salud que padece o ha padecido alguna vez</th>
+        </tr>
+        <tr>
+            <td class="checkbox">
+
+                <input type="checkbox" id="Agotamiento" name="Agotamiento[]" value="Agotamiento">
+                <label for="Agotamiento">Agotamiento por calor</label>
+
+                <input type="checkbox" id="Cefaleas" name="Cefaleas[]" value="Cefaleas">
+                <label for="Cefaleas">Cefaleas</label>
+            </td><td class="checkbox">
+                <input type="checkbox" id="Convulsiones" name="Convulsiones[]" value="Convulsiones">
+                <label for="Convulsiones">Convulsiones</label>
+
+                <input type="checkbox" id="GolpesCal" name="GolpesCal[]" value="GolpesCal">
+                <label for="GolpesCal">Golpes de calor</label>
+            </td><td class="checkbox2">
+                <input type="checkbox" id="Desmayos" name="Desmayos[]" value="Desmayos">
+                <label for="Desmayos">Desmayos</label>
+
+                <input type="checkbox" id="Hernias" name="Hernias[]" value="Hernias">
+                <label for="Hernias">Hernias</label>
+
+                </td>
+        </tr>
+        <tr>
+            <th class="checkbox2">
+                <label for="OtrosProblemas">Otros:</label>
+                <textarea id="OtrosProblemas" name="OtrosProblemas" rows="1" placeholder="Si ha padecido otro problemas, indíquelo aquí."></textarea> 
+            </th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="datosper">
+                <label for="alergia">Padece alguna alergia</label>
+            </th>
+            <th>
+                <input type="radio" name="respuesta" value="Si" required>
+                <label for="Si">Si</label>
+                <input type="radio" name="respuesta" value="No">
+                <label for="No">No</label>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <textarea id="alergiaobl" name="alergiaobl" rows="6" placeholder="Indique las alergias, si las tiene."></textarea>
+            </th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="datosper">
+                <label for="Observaciones">Observaciones</label>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <textarea id="Observaciones" name="Observaciones" rows="6" placeholder="Haga click o pulse aquí para escribir un texto"></textarea>
+            </th>
+        </tr>
+    </table>
+    <p><cite>Clínica OceanoService 2024</cite></p> 
+        <input type="submit" value="Guardar">
+    </form>
+</div>
+
+</body>
+</html>
