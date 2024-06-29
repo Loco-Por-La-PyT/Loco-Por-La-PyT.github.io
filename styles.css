@@ -175,6 +175,11 @@ main {
     background-color: #575757;
 }
 
+.Fuente-y-fecha{
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px
+}
 footer {
     background-color: #333;
     color: #fff;
